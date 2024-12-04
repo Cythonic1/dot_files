@@ -186,9 +186,6 @@ bindsym $mod+r mode "resize"
 set $shots ~/Pictures/Screenshots
 
 
-bindsym $mod+p exec maim --hidecursor $shots/$(date +%s).png
-bindsym $mod+Ctrl+p exec maim -s $shots/$(date +%s).png
-bindsym $mod+Shift+p exec feh $(last $shots)
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -238,4 +235,10 @@ for_window [class=".*"] border pixel 5
 smart_gaps on
 smart_gaps inverse_outer
 smart_borders on
+
+# custom bind 
+bindsym $mod+Ctrl+p exec flameshot gui
+bindsym $mod+Ctrl+w exec feh --bg-scale "$(find /home/pythonic/Pictures/wallpapers -type f | shuf -n 1)"
+
+
 
