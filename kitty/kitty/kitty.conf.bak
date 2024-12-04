@@ -1,0 +1,22 @@
+#include ~/.cache/wal/colors-kitty.conf
+
+font_family     Fira Code SemiBold
+font_size 	    15.0
+bold_font       auto
+italic_font      auto
+bold_italic_font auto
+scrollback_line 20000
+background_opacity 0.9
+confirm_os_window_close 0
+enable_audio_bell no
+# Key binding for horizontal split
+
+# Key binding for vertical split
+# selection_foreground #000000
+# selection_background #F5FBFF
+
+
+# BEGIN_KITTY_THEME
+# Hybrid
+#include current-theme.conf
+# END_KITTY_THEME
