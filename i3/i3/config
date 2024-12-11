@@ -193,8 +193,8 @@ bar {
     i3bar_command i3bar --transparency
         tray_output none
         font pango:  JetBrainsMono Nerd Font 11
-        # status_command i3status -c /home/$USER/.config/i3status/i3status.conf
-        status_command i3blocks
+        status_command i3status -c /home/$USER/.config/i3status/i3status.conf
+        # status_command i3blocks
         colors {
             background $bgcolor
                 separator #191919
@@ -239,6 +239,6 @@ smart_borders on
 # custom bind 
 bindsym $mod+Ctrl+p exec flameshot gui
 bindsym $mod+Ctrl+w exec feh --bg-scale "$(find /home/pythonic/Pictures/wallpapers -type f | shuf -n 1)"
-
+bindsym $mod+Ctrl+t exec feh --bg-scale "$(find /home/pythonic/Pictures/wallpapers -type f | fzf --preview 'file --mime-type {} | grep -q image/ && imgcat {}')"
 
 
